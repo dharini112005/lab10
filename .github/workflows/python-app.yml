@@ -1,0 +1,22 @@
+
+
+name: Devops
+
+on:
+  push:
+    branches: [ "main" ]
+  
+jobs:
+  build:
+
+    runs-on: windows-2025-vs2026
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: checkoutcode
+    
+    - name: setup python
+    - uses: setup@v4
+      run: Run python file
+           python app.py|
+        
